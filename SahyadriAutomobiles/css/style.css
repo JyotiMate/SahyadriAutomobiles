@@ -1,0 +1,475 @@
+
+/*STYLING FOR IMAGE SLIDER*/
+body, #slider, .wrap, .slide-content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap{
+  position: relative;
+}
+
+.slide{
+ 
+  background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+}
+
+.slide1{
+      background-image: url('../Images/SAuto.jpg');
+    
+        }
+
+.slide2{
+      background-image: url('../Images/bike1.jpg');
+      
+        }
+
+.slide3{
+      background-image: url('../Images/tools.JPG');
+     
+      }
+
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.slide-content p{
+  font-size: 2rem;
+  color: #fff;
+
+}
+
+.arrow{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left{
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+
+  margin-left: 30px;
+}
+#arrow-right{
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+
+  margin-right: 30px;
+}
+/*
+@media(max-width: 768px){
+  .slide1{
+      width:100%;
+      height: 100vh;
+      background-image: url('../Images/SAuto.jpg');
+      background-size: contain;
+        }
+}*/
+/*STYLING FOR IMAGE-SLIDER*/
+
+
+
+
+/*STYLING FOR NAVBAR*/
+#header{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	position: fixed;
+	background-color: #011f4b;
+	height: 95px;
+}
+
+.navbar{
+	padding: 0;
+	margin: 0;
+
+	
+
+}
+.nav-logo img {
+
+     width: 90px;
+     height: 90px;
+     border-radius: 50%;
+
+}
+.nav-logo #shopname{
+	padding-top: 30px;
+	padding-left: 20px;
+	color: #fff;
+	font-size: 1.8em;
+}
+
+.navbar-brand {
+	font-weight: 600;
+	font-size: 1.5em;
+	color: #fff;
+}
+
+.navbar-dark .navbar-brand .nav-link {
+
+	color: #fff;
+	
+}
+
+.nav-item {
+	font-weight: 600;
+	text-transform: uppercase;
+	padding-left: 10px;
+	color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link:hover{
+	background: #fff;
+	color: #011f4b;
+}
+
+@media (max-width: 865px){
+
+ .navbar-dark .navbar-nav .nav-item .nav-link:hover{
+  background: #011f4b;
+  color: #fff;
+}
+.navbar-collapse > ul{
+ background: #FFFAFA;
+
+}
+ 
+  .nav-item {
+    padding-left: 20px;
+
+  }
+  .nav-link{
+    padding-left: 10px;
+    color: #011f4b;
+  }
+
+
+}
+/*END OF STYLING FOR NAVBAR*/
+
+
+
+/*CONTENTS*/
+#aboutus-container {
+   margin: 10px 5px 20px 5px;
+}
+
+.aboutus-row {
+	padding: 10px 50px 0 50px;
+  /*padding-top: 10px;*/
+  height: auto;
+  width: 100%;
+  
+ }
+
+ .row-height{
+		height:auto;
+    margin-bottom: 20px;
+}
+.abt-row{
+  /*border: solid 3px #011f4b;*/
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 5px #888888;
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutus-row h4 {
+  font-size: 25px;
+  color: #16456C;
+  margin-top:15px;
+  margin-bottom: 15px;
+  padding: 0px;
+  font-weight: bold;
+  text-align: center;
+ }
+
+@keyframes nameMove {
+  from {color: #173F5F;}
+  to {color: #ED553B;}
+}
+
+.aboutus-row p {
+  font-size: 15px;
+  margin: 5px
+  padding: 0px;
+  text-align: justify;
+  }
+
+ .image-style1 {
+   margin: auto;
+  
+ }
+
+.align-image{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.aboutus-row img{
+
+  display: block;
+  
+ 
+  }
+
+#offer_row ul {
+font-size: 15px;
+margin-right: 10px;
+text-indent: 40px;
+list-style: square;
+
+ 
+
+}
+
+
+/*END OF CONTENTS*/
+
+
+
+
+
+/*CONTACT PAGE CSS*/
+
+
+
+#contactus-container {
+    margin: 10px 5px 10px 5px;
+}
+#content-contact {
+  padding:20px 20px 40px 50px;
+
+}
+
+#content-contact ul li{
+  font-size: 15px;
+  margin-right: 10px;
+  margin-top: 0px;
+
+  list-style:none;
+  text-indent: 0px;
+  text-align: justify;
+  text-justify: inter-word;
+  color: #1C598B;
+}
+
+#content-contact ul h2{
+  font-weight: bold;
+  font-size: 20px; 
+  color: #16456C;
+  padding-top: 20px;
+}
+
+.contactus-row{
+ 
+  border-radius: 20px;
+  padding: 15px;
+  
+}
+
+/*Contact Us page*/
+
+ iframe{
+   display: block;
+   width: 100%;
+   max-height: 500px;
+   margin-top: 60px;
+   border: solid 3px gray;
+   box-shadow: 0 0 5px #888888;
+   border-radius: 10px;
+}
+
+/*END OF CONTACT PAGE STYLING*/
+
+
+
+
+/*SERVICES PAGE*/
+
+#services-container {
+  margin: 10px 5px 20px 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.services-row{
+ 
+  margin: 10px 0 20px 0;
+
+ 
+
+}
+
+.services-row h4 {
+  padding-top: 10px;
+}
+
+
+.services-row > img {
+  padding: 5px;
+  height:250px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #16456C;
+  font-weight: bold;
+
+}
+.services-title > h3 {
+  font-size: 2.5em;
+  color: #011f4b;
+  font-weight: bold;
+  margin-top: 110px;
+  margin-bottom: 0;
+  padding-top: 20px; 
+ 
+ }
+#border-wrapper{
+    position:relative;
+    display:inline-block;
+}
+#border{
+    position: relative;
+    width: 10%;
+    height: 2px;
+    background-color: #011f4b;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+}
+.services-title:hover #border{
+  width: 15%;  
+ transition: .5s ease;
+  
+
+}
+
+ .services-row p {
+   padding: 10px;
+   font-size: 15px;
+   text-align: justify;
+      
+}
+.image_style {
+  width:80%;
+   opacity: 1;
+  display: block;
+   transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.box_shadow{
+  border-radius: 0px;
+  
+  height: 400px;
+ border-bottom: solid 3px #011f4b;
+}
+
+.services-row:hover .box_shadow{
+   border-radius: 5px;
+ border-style: solid;
+ box-shadow: 5px 5px 5px #888888;
+}
+.services-row:hover .image_style{
+  opacity: 0.5;
+}
+/*SERVICES PAGE*/
+
+
+
+#row-visit {
+  width: 100%;
+  height:80px;
+  margin-bottom: 105px;
+  text-align: center;
+
+}
+
+#column-visit {
+  width: 100%;
+  height: 50px;
+
+}
+#column-visit p{
+  width: 100%;
+  font-weight: bold;
+  font-family: Caladea;
+  font-size: 35px; 
+  color: #fe8a71;
+  text-align: center;
+  animation: blink 2s infinite;
+  }
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #984063;
+    text-shadow: none;
+  }
+ 0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500;
+}
+}
+
+
+/*FOOTER*/
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 110px;
+  background-color: #011f4b;
+  color: white;
+  text-align: center;
+}
+
+.footer p{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 13px;
+  padding-top: 5px;
+}
+ 
+ #copyright {
+  font-size: 10px;
+ }
+/*END OF FOOTER*/
